@@ -275,11 +275,10 @@ input::placeholder {
     display: none;
   }
   #bg {
-    transform: rotate(180deg);
     top: 0;
     height: 16.625rem;
     width: 100%;
-    background-image: url(../images/bg-main-mobile.png);
+    background-image: url(../images/bg-main-mobile.avif);
     background-repeat: no-repeat;
     background-size: cover;
   }
