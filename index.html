@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta
+      name="description"
+      content="Frontend Mentor | Interactive card details form"
+    />
+    <!-- Normalize CSS File -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body class="flex1">
+    <picture id="bg">
+      <img
+        src="./images/bg-main-desktop.png"
+        width="424.6"
+        height="791.2"
+        alt="back-ground"
+      />
+    </picture>
+    <main id="main" class="flex2">
+      <div id="front-card" class="card">
+        <div id="front-frame" class="card-frame">
+          <img
+            src="./images/bg-card-front.png"
+            width="447"
+            height="245"
+            alt="front card"
+          />
+          <div id="front-data" class="flex4">
+            <div id="header" class="flex3">
+              <div id="shape1"></div>
+              <div id="shape2"></div>
+            </div>
+            <div id="numbers-name-date" class="flex4">
+              <div id="numbers" class="flex1">
+                <span>0000</span>
+                <span>0000</span>
+                <span>0000</span>
+                <span>0000</span>
+              </div>
+              <div id="name-date" class="flex5">
+                <span id="name">JANE APPLESEED</span>
+                <span id="date">00/00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="back-card" class="card">
+        <div id="back-frame" class="card-frame">
+          <img
+            src="./images/bg-card-back.png"
+            width="447"
+            height="245"
+            alt="back card"
+          />
+          <div id="back-data">000</div>
+        </div>
+      </div>
+      <div id="form">
+        <div>
+          <label for="name-input">CARDHOLDER NAME</label>
+          <input
+            type="text"
+            id="name-input"
+            autocomplete="none"
+            placeholder="e.g. Jane Appleseed"
+          />
+        </div>
+        <div>
+          <label for="card-number">CARD NUMBER</label>
+          <input
+            type="text"
+            id="card-number"
+            autocomplete="none"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+        </div>
+        <div class="flex5" id="date-cvc-input">
+          <div>
+            <span>EXP. DATE (MM/YY)</span>
+            <div id="date-input">
+              <input
+                type="text"
+                id="month"
+                autocomplete="none"
+                placeholder="MM"
+              />
+              <input
+                type="text"
+                id="year"
+                autocomplete="none"
+                placeholder="YY"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="cvc-input">CARD NUMBER</label>
+            <input
+              type="text"
+              id="cvc-input"
+              autocomplete="none"
+              placeholder="e.g. 123"
+            />
+          </div>
+        </div>
+        <button id="confirm">Confirm</button>
+      </div>
+    </main>
+    <!-- todo : add the githup url-->
+    <div id="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#" target="_blank">Ahmed Hanye</a>.
+    </div>
+  </body>
+</html>

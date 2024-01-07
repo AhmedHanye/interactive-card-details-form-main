@@ -1,0 +1,312 @@
+/* Variables */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+  --red: hsl(0, 100%, 66%);
+}
+
+/* Google Fonts */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(../Space_Grotesk/static/SpaceGrotesk-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global Style Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+/* ---- CLASS's ---- */
+.flex1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex2 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.flex3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.flex4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card {
+  position: absolute;
+  z-index: 2;
+}
+.card-frame {
+  position: relative;
+  z-index: 3;
+}
+/* ---- ID's ---- */
+#bg {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  z-index: -1000000;
+}
+#bg > img {
+  height: 100%;
+}
+#main {
+  width: 73rem;
+  min-width: 70rem;
+  height: 33rem;
+  min-height: 30rem;
+  /* background-color: gray; */
+  position: relative;
+  z-index: 1;
+}
+/* --- Front Card --- */
+#main > #front-card {
+  left: 0;
+  top: 0;
+}
+/* -- Front data -- */
+#main > #front-card > #front-frame > #front-data {
+  position: absolute;
+  color: white;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+#main > #front-card > #front-frame > #front-data > #header {
+  width: 100%;
+  padding-left: 2rem;
+  gap: 0.6rem;
+}
+#main > #front-card > #front-frame > #front-data > #header > #shape1 {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 50%;
+}
+#main > #front-card > #front-frame > #front-data > #header > #shape2 {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+#main > #front-card > #front-frame > #front-data > #numbers-name-date {
+  width: 100%;
+  margin-top: 3.5rem;
+}
+#main
+  > #front-card
+  > #front-frame
+  > #front-data
+  > #numbers-name-date
+  > #numbers {
+  font-size: 1.8rem;
+  gap: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+#main
+  > #front-card
+  > #front-frame
+  > #front-data
+  > #numbers-name-date
+  > #name-date {
+  width: 100%;
+  font-size: 0.8rem;
+  padding: 0 2rem;
+  margin-top: 1.9rem;
+  letter-spacing: 0.18rem;
+}
+
+/* --- Back Card --- */
+#main > #back-card {
+  left: 6rem;
+  bottom: 0;
+}
+#main > #back-card > #back-frame > #back-data {
+  position: absolute;
+  top: 6.8rem;
+  right: 4rem;
+  color: var(--white);
+  letter-spacing: 0.1rem;
+}
+/* --- Form --- */
+#form {
+  width: 25rem;
+  margin-right: 6rem;
+}
+label,
+#form > #date-cvc-input > div > span {
+  margin-bottom: 0.4rem;
+  display: block;
+  font-size: 0.8rem;
+  color: var(--very-dark-violet);
+  letter-spacing: 0.1rem;
+}
+input {
+  padding: 0.7em 1rem;
+  border: 2px solid var(--light-grayish-violet);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+input::placeholder {
+  color: var(--dark-grayish-violet);
+}
+
+#form > div > input {
+  width: 25rem;
+}
+#form > #date-cvc-input > div > #date-input {
+  display: flex;
+  gap: 0.6rem;
+}
+#form > #date-cvc-input > div > #date-input input {
+  width: 5rem;
+}
+#form > #date-cvc-input > div input {
+  width: 13.5rem;
+}
+#form > #confirm {
+  width: 100%;
+  height: 3.5rem;
+  background-color: var(--very-dark-violet);
+  color: var(--white);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#form > #confirm:hover {
+  transform: scale(1.02);
+}
+
+/* ---- Attribution ---- */
+#attribution {
+  position: absolute;
+  bottom: 1rem;
+}
+#attribution > a {
+  color: var(--red);
+  display: inline-block;
+  margin: 0 0.2rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#attribution > a:hover{
+  color: var(--dark-grayish-violet);
+  transform: translateY(-0.08rem);
+}
+
+/* ---- Media Queries ---- */
+@media (max-width: 1200px) {
+  #main > #form {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1200px) and (min-width: 960px) {
+  #main {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 960px) and (min-width: 860px) {
+  #main {
+    transform: scale(0.7);
+  }
+}
+@media (max-width: 860px) {
+  #main {
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    min-width: initial;
+    min-height: initial;
+    padding-top: 30.5rem;
+  }
+  .card {
+    transform: scale(0.9);
+  }
+  #form {
+    transform: scale(1.2);
+  }
+  #main > #back-card {
+    top: 2rem;
+    left: initial;
+    bottom: initial;
+    right: 2rem;
+    z-index: 1;
+  }
+  #main > #front-card {
+    top: 10rem;
+    left: initial;
+    z-index: 2;
+    right: 6rem;
+  }
+  #bg > img {
+    display: none;
+  }
+  #bg {
+    transform: rotate(180deg);
+    top: 0;
+    height: 16.625rem;
+    width: 100%;
+    background-image: url(../images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 600px) {
+  #main {
+    padding-top: 20rem;
+  }
+  .card {
+    transform: scale(0.6);
+  }
+  #main > #front-card {
+    right: 0rem;
+    top: 5rem;
+  }
+  #main > #back-card {
+    right: -4rem;
+    top: -0.2rem;
+  }
+  #main > #form {
+    transform: scale(0.8);
+  }
+  #bg {
+    height: 25%;
+  }
+  #attribution{
+    font-size: small;
+    z-index: 10;
+  }
+}
