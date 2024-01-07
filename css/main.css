@@ -4,7 +4,7 @@
   --light-grayish-violet: hsl(270, 3%, 87%);
   --dark-grayish-violet: hsl(279, 6%, 55%);
   --very-dark-violet: hsl(278, 68%, 11%);
-  --red: hsl(0, 100%, 66%);
+  --red: hsl(0, 79%, 52%);
 }
 
 /* Google Fonts */
@@ -220,7 +220,7 @@ input::placeholder {
   text-decoration: none;
   transition: 0.3s;
 }
-#attribution > a:hover{
+#attribution > a:hover {
   color: var(--dark-grayish-violet);
   transform: translateY(-0.08rem);
 }
@@ -305,7 +305,7 @@ input::placeholder {
   #bg {
     height: 25%;
   }
-  #attribution{
+  #attribution {
     font-size: small;
     z-index: 10;
   }
