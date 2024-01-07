@@ -212,7 +212,7 @@ input::placeholder {
 #attribution {
   position: absolute;
   bottom: 1rem;
-  color: var(--dark-grayish-violet);
+  color: var(--very-dark-violet);
 }
 #attribution > a {
   color: var(--red);
