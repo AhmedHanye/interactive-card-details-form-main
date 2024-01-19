@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <meta
       name="description"
       content="Frontend Mentor | Interactive card details form"
@@ -47,14 +46,14 @@
               <div id="shape2"></div>
             </div>
             <div id="front-numbers-name-date" class="flex4">
-              <div id="front-numbers" class="flex1">
+              <div id="front-numbers" class="flex5">
                 <span>0000</span>
                 <span>0000</span>
                 <span>0000</span>
                 <span>0000</span>
               </div>
               <div id="front-name-date" class="flex5">
-                <span id="front-name">JANE APPLESEED</span>
+                <span id="front-name"></span>
                 <span id="front-date">00/00</span>
               </div>
             </div>
@@ -73,65 +72,71 @@
           <div id="back-cvc">000</div>
         </div>
       </div>
+      <!-- The Form -->
       <div id="form">
-        <div class="error">
+        <div>
           <label for="form-name">CARDHOLDER NAME</label>
           <input
             type="text"
             id="form-name"
-            
-            autocomplete="none"
+            autocomplete="off"
             placeholder="e.g. Jane Appleseed"
+            maxlength="30"
           />
         </div>
-        <div class="error">
+        <div>
           <label for="form-number">CARD NUMBER</label>
           <input
             type="text"
             id="form-number"
-            autocomplete="none"
+            autocomplete="off"
             placeholder="e.g. 1234 5678 9123 0000"
+            maxlength="16"
           />
         </div>
         <div class="flex5" id="form-date-cvc">
-          <div class="error">
+          <div>
             <span>EXP. DATE (MM/YY)</span>
             <div id="form-date">
               <input
                 type="text"
                 id="month"
-                autocomplete="none"
+                autocomplete="off"
                 placeholder="MM"
+                maxlength="2"
               />
               <input
                 type="text"
                 id="year"
-                autocomplete="none"
+                autocomplete="off"
                 placeholder="YY"
+                maxlength="2"
               />
             </div>
           </div>
-          <div class="error">
+          <div>
             <label for="form-cvc">CARD NUMBER</label>
             <input
               type="text"
               id="form-cvc"
-              autocomplete="none"
+              autocomplete="off"
               placeholder="e.g. 123"
+              maxlength="3"
             />
           </div>
         </div>
-        <button class="confirm">Confirm</button>
+        <button class="confirm" id="form-button">Confirm</button>
       </div>
+      <!-- The Message -->
       <div id="message" class="flex4 hidden">
-        <img src="./images/icon-complete.svg" alt="confirmed">
+        <img src="./images/icon-complete.svg" alt="confirmed" />
         <h1>THANK YOU!</h1>
         <p>We've added your card details</p>
-        <button class="confirm">Confirm</button>
+        <button class="confirm" id="message-button">Confirm</button>
       </div>
     </main>
     <!-- The Attribution -->
-    <div id="attribution">
+    <footer id="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
@@ -141,6 +146,8 @@
         target="_blank"
         >Ahmed Hanye</a
       >.
-    </div>
+    </footer>
+    <!-- The JavaScript File -->
+    <script src="./JS/script.js"></script>
   </body>
 </html>

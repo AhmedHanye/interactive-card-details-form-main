@@ -82,15 +82,24 @@ body {
 .confirm:hover {
   transform: scale(1.02);
 }
-.hidden{
+.hidden {
   display: none;
 }
-.error{
+.error {
   position: relative;
 }
-.error::after{
+.error1::after {
   /* The Error Message */
-  content: "";
+  content: "Can't be empty";
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0;
+  font-size: 0.8rem;
+  color: var(--red);
+}
+.error2::after {
+  /* The Error Message */
+  content: "please enter valid data";
   position: absolute;
   bottom: 0.6rem;
   left: 0;
@@ -159,8 +168,17 @@ body {
   > #front-numbers-name-date
   > #front-numbers {
   font-size: 1.8rem;
-  gap: 0.8rem;
   letter-spacing: 0.2rem;
+  width: 22.5rem;
+}
+#main
+  > #front-card
+  > #front-frame
+  > #front-data
+  > #front-numbers-name-date
+  > #front-numbers
+  > span {
+  width: 5rem;
 }
 #main
   > #front-card
@@ -230,7 +248,7 @@ input::placeholder {
   margin-right: 5rem;
   gap: 2rem;
 }
-#message > p{
+#message > p {
   font-size: 1.1rem;
   color: var(--dark-grayish-violet);
   margin-top: -1rem;
@@ -311,7 +329,7 @@ input::placeholder {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  #message{
+  #message {
     margin-right: 0;
   }
 }
@@ -337,7 +355,7 @@ input::placeholder {
   #bg {
     height: 25%;
   }
-  #message{
+  #message {
     transform: scale(0.8);
   }
   #attribution {
